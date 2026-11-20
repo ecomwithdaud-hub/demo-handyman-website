@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔨</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Apex Pro Handyman Services | Licensed & Insured Home Repairs</title>
+    <!-- Google Fonts: Oswald (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN for instant styling without build friction -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                navy: '#002E5D',      // Deep Corporate Navy (Primary base)
+                navyDark: '#001E3D',  // Header / Footer Dark
+                slate: '#2B5672',     // Secondary Steel Blue
+                orange: '#D9480F',    // Safety Action Orange (CTA)
+                orangeHover: '#BF360C',
+                grayBg: '#F8FAFC',    // Light Neutral Slate
+                cardBorder: '#E2E8F0',
+                textDark: '#0F172A',  // Slate 900
+                textMuted: '#475569'  // Slate 600
+              }
+            },
+            fontFamily: {
+              heading: ['Oswald', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        color: #0F172A;
+        background-color: #F8FAFC;
+        -webkit-tap-highlight-color: transparent;
+      }
+      h1, h2, h3, .font-heading {
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 0.02em;
+      }
+      /* Custom smooth scroll and slider */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for category tabs on mobile */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-brand-grayBg text-brand-textDark antialiased selection:bg-brand-navy selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
